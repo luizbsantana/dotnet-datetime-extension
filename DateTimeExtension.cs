@@ -78,10 +78,10 @@ namespace Brazilian.DateTimeExtension
         }
 
         /// <summary>
-        /// Check if a <see cref="DateTime"/> object is a brazilian holiday
+        /// Check if a <see cref="DateTime"/> object is a brazilian business day
         /// </summary>
         /// <param name="date">DateTime that will be checked</param>
-        /// <returns>True if is holiday or False if it is not</returns>
+        /// <returns>True if is business day or False if it is not</returns>
         public static bool IsBusinessDay(this DateTime date)
         {
             if (date.IsBrazilianHoliday())
