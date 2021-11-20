@@ -1,15 +1,15 @@
 using System;
 
-namespace Extensions.Models.DateTimeExtension
+namespace Brazil.Datetime.Models
 {
     public class Holiday
     {
         public Holiday(DateTime date, string name)
         {
-            Date = date;
-            Name = name;
-        }
+            this.Date = date;
+            this.Name = name;
 
+        }
         public DateTime Date { get; private set; }
 
         public string Name { get; private set; }

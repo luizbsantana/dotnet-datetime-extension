@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Brazil.DateTime</id>
+    <version>1.0.0</version>
+    <authors>Luiz Santana</authors>
+    <owners>Luiz Santana</owners>
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Brazil DateTime extension (Timezone convert, holidays, business days)</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Nager.Date" version="1.30.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\net5.0\Brazil.DateTime.dll" target="lib\net5.0\Brazil.DateTime.dll" />
+    <file src="bin\Release\net5.0\Brazil.DateTime.xml" target="lib\net5.0\Brazil.DateTime.xml" />
+  </files>
+</package>
