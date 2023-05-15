@@ -18,7 +18,10 @@ namespace Brazil.Datetime
         /// <returns>Converted DateTime with brazilian timezone</returns>
         public static DateTime ToBrazilianTimeZone(this DateTime date)
         {
-            return TimeZoneInfo.ConvertTimeFromUtc(date.ToUniversalTime(),
+            if (date.Kind == DateTimeKind.Local)
+                return date;
+
+            return TimeZoneInfo.ConvertTimeFromUtc(date,
                 Environment.OSVersion.Platform == PlatformID.Unix
                 ? TimeZoneInfo.FindSystemTimeZoneById("America/Sao_Paulo")
                 : TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time"));
